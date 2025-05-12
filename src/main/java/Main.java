@@ -4,10 +4,9 @@ import java.nio.file.Files;
 
 public class Main {
   public static void main(String[] args){
-    // You can use print statements as follows for debugging, they'll be visible when running tests.
     System.err.println("Logs from your program will appear here!");
 
-    // Uncomment this block to pass the first stage
+
     
     final String command = args[0];
     
@@ -25,8 +24,12 @@ public class Main {
         } catch (IOException e) {
           throw new RuntimeException(e);
         }
+        case "cat-file" -> {
+
+        }
       }
       default -> System.out.println("Unknown command: " + command);
     }
+    System.out.println(args);
   }
 }
