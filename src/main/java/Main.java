@@ -27,6 +27,6 @@ public class Main {
         }
       }
       default -> System.out.println("Unknown command: " + command);
-    // }
+    }
   }
 }
